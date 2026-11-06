@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadania JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 25px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .zadanie {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input, select, button {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .wynik {
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        #szyfrWynik {
+            display: inline-block;
+            margin-left: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Zadania JavaScript</h1>
+
+    <div class="zadanie">
+        <h3>1. SUMA</h3>
+        <input type="number" id="sumaA" placeholder="Pierwsza liczba">
+        <input type="number" id="sumaB" placeholder="Druga liczba">
+        <button onclick="SUMA()">Oblicz sumę</button>
+    </div>
+
+    <div class="zadanie">
+        <h3>2. PODSTAWY</h3>
+        <input type="number" id="podA" placeholder="Pierwsza liczba">
+        <input type="number" id="podB" placeholder="Druga liczba">
+        <button onclick="PODSTAWY()">Oblicz</button>
+    </div>
+
+    <div class="zadanie">
+        <h3>3. KALKULATOR</h3>
+        <input type="number" id="kalA" placeholder="Pierwsza liczba">
+        <input type="number" id="kalB" placeholder="Druga liczba">
+
+        <select id="dzialanie">
+            <option value="suma">Suma</option>
+            <option value="roznica">Różnica</option>
+            <option value="iloczyn">Iloczyn</option>
+            <option value="iloraz">Iloraz</option>
+        </select>
+
+        <button onclick="KALKULATOR()">Oblicz</button>
+        <p id="wynik"></p>
+    </div>
+
+    <div class="zadanie">
+        <h3>4. MAKS</h3>
+        <input type="number" id="maksA" placeholder="Pierwsza liczba">
+        <input type="number" id="maksB" placeholder="Druga liczba">
+        <input type="number" id="maksC" placeholder="Trzecia liczba">
+        <button onclick="MAKS()">Znajdź największą</button>
+    </div>
+
+    <div class="zadanie">
+        <h3>5. WZROST</h3>
+        <input type="number" id="wzrost" placeholder="Wzrost w cm">
+        <button onclick="WZROST()">Sprawdź wzrost</button>
+    </div>
+
+    <div class="zadanie">
+        <h3>6. BMI</h3>
+        <input type="number" id="bmiWzrost" placeholder="Wzrost w cm">
+        <input type="number" id="bmiWaga" placeholder="Waga w kg">
+        <button onclick="BMI()">Oblicz BMI</button>
+        <p id="bmiWynik" class="wynik"></p>
+    </div>
+
+    <div class="zadanie">
+        <h3>7. STARSZY</h3>
+        <label>Pierwsza osoba:</label>
+        <input type="date" id="data1">
+
+        <br>
+
+        <label>Druga osoba:</label>
+        <input type="date" id="data2">
+
+        <br>
+
+        <button onclick="STARSZY()">Sprawdź</button>
+    </div>
+
+    <div class="zadanie">
+        <h3>8. PRZESTEPNY</h3>
+        <input type="number" id="rok" placeholder="Podaj rok">
+        <button onclick="PRZESTEPNY()">Sprawdź rok</button>
+    </div>
+
+    <div class="zadanie">
+        <h3>9. SIŁA HASŁA</h3>
+        <input type="password" id="haslo" placeholder="Wpisz hasło">
+        <p id="silaWynik"></p>
+    </div>
+
+    <div class="zadanie">
+        <h3>10. TROJKAT</h3>
+        <input type="number" id="bokA" placeholder="Pierwszy bok">
+        <input type="number" id="bokB" placeholder="Drugi bok">
+        <input type="number" id="bokC" placeholder="Trzeci bok">
+        <button onclick="TROJKAT()">Sprawdź trójkąt</button>
+    </div>
+
+    <div class="zadanie">
+        <h3>11. SZYFR</h3>
+        <input type="text" id="tekst" placeholder="Wpisuj tekst">
+        <span id="szyfrWynik"></span>
+    </div>
+
+    <script src="funkcje.js"></script>
+
+</body>
+</html>
